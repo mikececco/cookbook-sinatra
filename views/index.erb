@@ -1,0 +1,17 @@
+<p>
+  I'm in a <em>view</em>!
+</p>
+
+<ul>
+  <% ["Papillard", "ssaunier"].each do |username| %>
+    <li>
+      <%= username %>
+    </li>
+  <% end %>
+</ul>
+
+<% @usernames.each do |username| %> <%# instance variable in the controller that I can use them in the view %>
+  <li>
+    <%= username %>
+  </li>
+<% end %>
